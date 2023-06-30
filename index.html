@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spotify - Web Player: Music for everyone </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <div class="main-whole-container">
+            <div class="main-sub-container">
+                <div class="first-flex">
+                    <div class="header-container">
+                        <div class="spotify-icon-container">
+                            <svg role="img" viewBox="0 0 78 24" aria-label="Spotify" aria-hidden="false" data-testid="spotify-icon" height="32" data-encore-id="logoSpotify" class="Svg-sc-6c3c1v-0 ckTExL"><title>Spotify</title><path d="M18.616 10.639c-3.77-2.297-9.99-2.509-13.59-1.388a1.077 1.077 0 0 1-1.164-.363 1.14 1.14 0 0 1-.119-1.237c.136-.262.37-.46.648-.548 4.132-1.287 11-1.038 15.342 1.605a1.138 1.138 0 0 1 .099 1.863 1.081 1.081 0 0 1-.813.213c-.142-.02-.28-.07-.403-.145Zm-.124 3.402a.915.915 0 0 1-.563.42.894.894 0 0 1-.69-.112c-3.144-1.983-7.937-2.557-11.657-1.398a.898.898 0 0 1-.971-.303.952.952 0 0 1-.098-1.03.929.929 0 0 1 .54-.458c4.248-1.323 9.53-.682 13.14 1.595a.95.95 0 0 1 .3 1.286Zm-1.43 3.267a.73.73 0 0 1-.45.338.712.712 0 0 1-.553-.089c-2.748-1.722-6.204-2.111-10.276-1.156a.718.718 0 0 1-.758-.298.745.745 0 0 1-.115-.265.757.757 0 0 1 .092-.563.737.737 0 0 1 .457-.333c4.455-1.045 8.277-.595 11.361 1.338a.762.762 0 0 1 .241 1.028ZM11.696 0C5.237 0 0 5.373 0 12c0 6.628 5.236 12 11.697 12 6.46 0 11.698-5.372 11.698-12 0-6.627-5.238-12-11.699-12h.001Zm20.126 11.078c-2.019-.494-2.379-.84-2.379-1.57 0-.688.633-1.151 1.572-1.151.91 0 1.814.352 2.76 1.076a.131.131 0 0 0 .187-.03l.987-1.426a.139.139 0 0 0-.025-.185c-1.127-.928-2.396-1.378-3.88-1.378-2.18 0-3.703 1.342-3.703 3.263 0 2.06 1.315 2.788 3.585 3.352 1.932.457 2.258.84 2.258 1.524 0 .757-.659 1.229-1.72 1.229-1.18 0-2.141-.408-3.216-1.364a.13.13 0 0 0-.188.016l-1.106 1.35a.137.137 0 0 0 .013.188c1.252 1.147 2.79 1.752 4.451 1.752 2.35 0 3.869-1.317 3.869-3.356 0-1.723-1.003-2.676-3.465-3.29Zm10.487 2.31c0 1.454-.874 2.47-2.125 2.47-1.235 0-2.169-1.061-2.169-2.47 0-1.41.933-2.47 2.17-2.47 1.23 0 2.124 1.038 2.124 2.47Zm-1.706-4.354c-1.018 0-1.854.412-2.543 1.256v-.95a.136.136 0 0 0-.038-.095.132.132 0 0 0-.093-.04h-1.81a.131.131 0 0 0-.093.04.136.136 0 0 0-.039.096v10.546c0 .076.06.137.133.137h1.809a.132.132 0 0 0 .093-.041.136.136 0 0 0 .038-.096v-3.329c.69.794 1.525 1.18 2.543 1.18 1.893 0 3.808-1.494 3.808-4.35 0-2.858-1.915-4.354-3.808-4.354Zm8.72 6.839c-1.297 0-2.274-1.068-2.274-2.486 0-1.422.943-2.455 2.244-2.455 1.305 0 2.288 1.069 2.288 2.487 0 1.422-.949 2.454-2.258 2.454Zm0-6.838c-2.438 0-4.347 1.926-4.347 4.383 0 2.432 1.896 4.338 4.317 4.338 2.445 0 4.36-1.92 4.36-4.369 0-2.44-1.901-4.353-4.33-4.353Zm9.535.17h-1.99V7.117a.136.136 0 0 0-.08-.126.13.13 0 0 0-.052-.01h-1.809a.133.133 0 0 0-.093.04.136.136 0 0 0-.038.095v2.087h-.87a.131.131 0 0 0-.122.085.139.139 0 0 0-.01.052v1.595c0 .074.06.135.132.135h.87v4.126c0 1.667.809 2.513 2.404 2.513.648 0 1.186-.138 1.694-.434a.135.135 0 0 0 .067-.117V15.64a.137.137 0 0 0-.063-.115.13.13 0 0 0-.129-.006c-.349.18-.685.263-1.061.263-.58 0-.84-.271-.84-.876V11.07h1.99a.13.13 0 0 0 .094-.04.136.136 0 0 0 .039-.096V9.339a.137.137 0 0 0-.039-.096.132.132 0 0 0-.094-.04v.001Zm6.934.007v-.255c0-.755.281-1.092.914-1.092.376 0 .68.077 1.019.194a.13.13 0 0 0 .118-.02.135.135 0 0 0 .056-.11V6.365a.137.137 0 0 0-.026-.081.133.133 0 0 0-.068-.05 4.852 4.852 0 0 0-1.502-.22c-1.67 0-2.554.965-2.554 2.788v.393h-.87a.132.132 0 0 0-.093.04.136.136 0 0 0-.038.096v1.603c0 .075.059.136.132.136h.87v6.364c0 .075.058.135.131.135h1.809c.072 0 .131-.06.131-.135V11.07h1.69l2.586 6.362c-.294.669-.583.802-.977.802-.319 0-.654-.098-.998-.29a.133.133 0 0 0-.105-.01.135.135 0 0 0-.078.072l-.612 1.38a.137.137 0 0 0 .056.175 3.733 3.733 0 0 0 1.932.508c1.334 0 2.073-.638 2.724-2.355l3.137-8.317a.14.14 0 0 0-.014-.126.131.131 0 0 0-.108-.06h-1.883a.132.132 0 0 0-.126.092l-1.928 5.651L69.006 9.3a.133.133 0 0 0-.124-.088h-3.09v.001Zm-4.02-.008h-1.809a.132.132 0 0 0-.093.041.136.136 0 0 0-.038.096v8.094c0 .075.06.135.132.135h1.809c.072 0 .131-.06.131-.135V9.34a.136.136 0 0 0-.038-.096.133.133 0 0 0-.094-.04Zm-.896-3.685a1.295 1.295 0 0 0-.919.393c-.243.25-.379.586-.377.937a1.342 1.342 0 0 0 .377.938 1.304 1.304 0 0 0 .92.393c.346-.002.677-.143.92-.393s.379-.587.377-.938c0-.735-.581-1.33-1.296-1.33h-.002Zm15.918 4.49h-.331v.434h.331c.165 0 .264-.083.264-.216 0-.142-.099-.217-.264-.217Zm.215.619.36.517h-.304l-.323-.474h-.279v.474h-.254v-1.37h.595c.31 0 .515.163.515.436a.412.412 0 0 1-.31.417Zm-.282-1.31c-.652 0-1.146.532-1.146 1.183 0 .65.49 1.175 1.139 1.175.652 0 1.147-.532 1.147-1.183 0-.65-.492-1.174-1.14-1.174Zm-.007 2.488a1.259 1.259 0 0 1-.904-.384 1.296 1.296 0 0 1-.368-.92c0-.717.563-1.314 1.279-1.314a1.259 1.259 0 0 1 .903.384 1.295 1.295 0 0 1 .369.921c0 .717-.563 1.314-1.279 1.314Z"></path></svg>
+                        </div>
+                        <div class="right-side-container">
+                            <a class="search">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" height="16" width="16" aria-hidden="true" data-testid="search-icon" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z" fill="#FFFFFF"></path></svg>
+                            </a>
+                            <button class="header-button">
+                                <span class="header-button-span">OPEN APP </span>
+                            </button>
+                            <div class="header-menu">
+                                <span class="header-menu-icon">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M21 6H3V4h18v2zm0 14H3v-2h18v2zm0-7H3v-2h18v2z" fill="#ffffff"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-main-container">
+                        <div class="first-content-container">
+                            <div class="first-heads">
+                                <h2 class="first-head-h2">Focus</h2>
+                            </div>
+                            <div class="first-cards-container-flex">
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/peaceful-piano.jpeg" alt="peaceful-piano-image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">Peaceful Piano</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/deep-focus.jpeg" alt="Deep-focus-image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">Deep Focus</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/Instrumental Study.jpeg" alt="instrumental-study-image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">Instrumental Study</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/focu-flow.jpeg" alt="focus-flow-image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">Focus Flow</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/beats-of-think.jpeg" alt="Beats to think to">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-image">Beats to think to</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/reading-adventure.jpeg" alt="reading adventure image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="firt-card-text-p">Reading Adventure</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/ralxive readig.jpeg" alt="Relaxing Reading Image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <div class="first-card-text-p">Relaxing Reading</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/Quiet-moment.jpeg" alt="quiet-moment-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <div class="first-heads">
+                              <h2 class="first-head-h2">Spotify Playlists</h2>
+                           </div>
+                           <div class="first-cards-container-flex">
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/Today's-top hits.jpeg" alt="today's top hit image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">Today's Top Hits</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/Rapcaviar.jpeg" alt="today's top hit image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">RapCaviar</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/all-=out-2010s.jpeg" alt="all out 2010s image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-image-p">All Out 2010s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/rock classic.jpeg" alt="Rock classic image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">Rock Classics</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/chill hits.jpeg" alt="chill hits image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">Viva Latino</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images//mega hits.jpeg" alt="mega hits image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">Mega Hit Mix</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/allout.jpeg" alt="all out 80s image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">All Out 80s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="first-heads">
+                                <h2 class="first-head-h2">Sound of India</h2>
+                           </div>
+                           <div class="first-cards-container-flex">
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/sound of mumbai.jpeg" alt="sound-of-mumbai image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">The Sound of Mumbai IN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/sound of kolkata.jpeg" alt="sound of kolkata image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">The Sound of Kolkata IN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/sound of delhi.jpeg" alt="sound of delhi">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-image">The sound of Delhi IN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/sound-of-bangalure.jpeg" alt="sound of bangalure image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">The Sound of Bangalure IN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/sound of chennai.jpeg" alt="sound of chennai">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">The Sound of Chennai IN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="first-card-flex">
+                                    <div class="first-card-container">
+                                        <div class="first-card-image">
+                                            <img src="./images/sound of hydrabad.jpeg" alt="sound of hydrabad image">
+                                        </div>
+                                        <div class="first-card-text">
+                                            <p class="first-card-text-p">The Sound of Hyderabad IN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer-whole-container">
+                            <div class="footer-sub-container">
+                                <div class="footer-container-main-flex">
+                                    <div class="footer-content-flex">
+                                        <div class="company">
+                                            <span class="company-list  bold-text">Company</span>
+                                            <span class="company-list common">About</span>
+                                            <span class="company-list common">Jobs</span>
+                                            <span class="company-list common">For the Record</span>
+                                        </div>
+                                        <div class="communities">
+                                            <span class="community-list  bold-text">Communities</span>
+                                            <span class="community-list common">For Artists</span>
+                                            <span class="community-list common">Developers</span>
+                                            <span class="community-list common">Advertising</span>
+                                            <span class="community-list common">Investors</span>
+                                            <span class="community-list common">Vendors</span>
+                                            <span class="community-list common">Spotify for Work</span>
+                                        </div>
+                                        <div class="useful-links">
+                                            <span class="useful-list  bold-text">Useful links</span>
+                                            <span class="useful-list common">Support</span>
+                                            <span class="useful-list common">Free Mobile App</span>
+                                        </div>
+                                    </div>
+                                    <div class="social-links-container">
+                                        <div class="instagram s-common">
+                                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 01-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 01-.921-.599 2.477 2.477 0 01-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 01.92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 00-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 002.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 00-.923-1.418A3.928 3.928 0 0013.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z" fill="#FFFFFF"></path><path d="M8 3.892a4.108 4.108 0 100 8.216 4.108 4.108 0 000-8.216zm0 6.775a2.668 2.668 0 110-5.335 2.668 2.668 0 010 5.335zm4.27-5.978a.96.96 0 100-1.92.96.96 0 000 1.92z" fill="#FFFFFF"></path></svg>
+                                        </div>
+                                        <div class="twitter s-common">
+                                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 hOjEcl"><path d="M13.54 3.889a2.968 2.968 0 001.333-1.683 5.937 5.937 0 01-1.929.738 2.992 2.992 0 00-.996-.706 2.98 2.98 0 00-1.218-.254 2.92 2.92 0 00-2.143.889 2.929 2.929 0 00-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 01-3.484-.932A8.536 8.536 0 011.532 2.54a2.993 2.993 0 00-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 01-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 001.739 1.048 2.937 2.937 0 01-1.365.056 2.94 2.94 0 001.063 1.5 2.945 2.945 0 001.77.603 5.944 5.944 0 01-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 005.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 001.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 00.738-1.988 8.417 8.417 0 00.246-2.429 6.177 6.177 0 001.508-1.563c-.56.249-1.14.407-1.738.476z" fill="#FFFFFF"></path></svg>
+                                        </div>
+                                        <div class="facebook s-common">
+                                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M16 8a8 8 0 10-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0016 8z" fill="#FFFFFF"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="footer-hr">
+                                <div class="footer-last-main-container">
+                                    <div class="footer-last-sub-container">
+                                        <div class="footer-content-flex-container">
+                                            <div class="footer-contents-flex">
+                                                <div class="legal e-common">
+                                                    <span class="end-span">Legal</span>
+                                                </div>
+                                                <div class="privacy-center e-common">
+                                                    <span class="end-span"> Privacy center</span>
+                                                </div>
+                                                <div class="privacy-policy e-common">
+                                                    <span class="end-span">Privacy Policy</span>
+                                                </div>
+                                                <div class="cookies e-common">
+                                                    <span class="end-span">Cookies</span>
+                                                </div>
+                                                <div class="about-ads e-common">
+                                                    <span class="end-span">About Ads</span>
+                                                </div>
+                                                <div class="accessibility e-common">
+                                                    <span class="end-span">Accessibility</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="copyright-contianer">
+                                        <div class="copy-right-content">
+                                          <p>  © 2023 Spotify AB</p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-language-conatiner">
+                                        <button class="footer-language-button">
+                                            <span class="footer-browser-icon">
+                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z" fill="#FFFFFF"></path></svg>
+                                            </span>
+                                            <span class="footer-language-text">
+                                                English
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desktop-whole-container">
+            <div class="desktop-whole-sub-container">
+                <div class="desktop-main-grid">
+                    <div class="d-left-whole-container">
+                        <div class="d-left-container">
+                            <div class="d-home-search-container">
+                                <ul class="d-home-search-ul">
+                                    <li class="d-home">
+                                        <a href="" class="home-search-a">
+                                            <svg role="img" height="24" width="24" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq home-active-icon" viewBox="0 0 24 24" data-encore-id="icon"><path d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"></path></svg>
+                                            <span class="d-search">Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="d-home search">
+                                        <a href="" class="home-search-a">
+                                            <svg role="img" height="24" width="24" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq search-icon" viewBox="0 0 24 24" data-encore-id="icon"><path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path></svg>
+                                            <span class="d-search">Search</span>
+                                        </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-from-library-whole-flex">
+                                <div class="d-library-playlist-container">
+                                    <div class="d-library-container">
+                                        <div class="d-library-sub">
+                                            <div class="d-library-flex">
+                                                <div class="d-library-button">
+                                                    <span class="d-library-svg">
+                                                        <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg>
+                                                    </span>
+                                                    <span class="d-library-text">Your Library</span>
+                                                </div>
+                                                <div class="d-library-plus">
+                                                    <span><svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"></path></svg></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="d-playlist-cookies-container">
+                                            <div class="d-playlist-whole-container">
+                                                <div class="d-playlist-container">
+                                                    <div class="dcp-text">
+                                                        <span class="dcp-c-text">Create your first playlist</span>
+                                                        <span class="dcp-s-text">It's easy, we'll help you</span>
+                                                    </div>
+                                                    <div class="dcb-container">
+                                                        <span class="dcbb-text">Create playlist</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-playlist-container">
+                                                    <div class="dcp-text">
+                                                        <span class="dcp-c-text">Let's find some podcasts to follow</span>
+                                                        <span class="dcp-s-text">We'll keep you updated on  new episodes</span>
+                                                    </div>
+                                                    <div class="dcb-container">
+                                                        <span class="dcbb-text">Browse podcasts</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-cookies-container">
+                                                <div class="dct-text-container">
+                                                    <a class="dct-text-a">
+                                                        <span class="dct-text-span">Cookies</span>
+                                                    </a>
+                                                </div>
+                                                <div class="dcb-button-container">
+                                                    <button class="dcb-button">
+                                                        <span class="dcb-svg">
+                                                            <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z"></path></svg>
+                                                        </span>
+                                                        <span class="dcb-span-text">English</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-right-whole-container">
+                        <div class="d-right-container">
+                            <div class="d-signin-container">
+                                <div class="d-header">
+                                    <div class="d-arrow-container">
+                                        <div class="d-left-arrow">
+                                            <svg role="img" height="16" width="16" aria-hidden="true" class="Svg-sc-ytk21e-0 leya-dW IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16" data-encore-id="icon"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path></svg>
+                                        </div>
+                                        <div class="d-left-arrow">
+                                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" height="16" width="16" aria-hidden="true" class="Svg-sc-ytk21e-0 leya-dW IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16" data-encore-id="icon"><path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z" fill="#FFFFFF"></path></svg>
+                                        </div>
+                                    </div>
+                                    <div class="d-top-buttons-container">
+                                        <button class="d-sign-up sl">Sign up</button>
+                                        <button class="d-login sl"><span class="d-span-login">Log in</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whole-content-container-flex">
+                                <div class="whole-content-container">
+                                    <div class="whole-content-sub-container">
+                                        <div class="focus-main-container">
+                                            <div class="focus-text-container">
+                                                <span class="focus-text">Focus</span>
+                                            </div>
+                                            <div class="show-all-text">
+                                                <span class="show-all">
+                                                    Show all
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="cards-content-whole-container">
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/peaceful-piano.jpeg" alt="peaceful-piano-image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Peaceful Piano</span>
+                                                        <span class="d-cd-p">Peaceful piano to help you slow down, breathe, and relax.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/deep-focus.jpeg" alt="deep-focus">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Deep Focus</span>
+                                                        <span class="d-cd-p">Keep calm and focus with ambient and post-rock music.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/Instrumental Study.jpeg" alt="instrumental Study">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Instrumental Study</span>
+                                                        <span class="d-cd-p">Focus with soft study music in the background.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/focu-flow.jpeg" alt="focus flow image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Focus Flow</span>
+                                                        <span class="d-cd-p">Uptempo instrumental hip hop beats.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/work.jpeg" alt="workday lounge image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Workday Lounge</span>
+                                                        <span class="d-cd-p">Lounge and chill out music for your workday.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/beats-of-think.jpeg"  alt="beats to think image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Beats to think to </span>
+                                                        <span class="d-cd-p">Focus with deep techno and tech house.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="focus-main-container">
+                                            <div class="focus-text-container">
+                                                <span class="focus-text">Spotify Playlists</span>
+                                            </div>
+                                            <div class="show-all-text">
+                                                <span class="show-all">
+                                                    Show all
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="cards-content-whole-container">
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/girl-top-hits.jpeg"  alt="top-hits">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Today's Top Hits</span>
+                                                        <span class="d-cd-p">Doja Cat on top of the Hottest 50!</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/rapcavier-two.jpeg" alt="rapcavier-image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">RapCaviar</span>
+                                                        <span class="d-cd-p">New music from Gunna, Gucci Mane and Doja Cat.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/all-=out-2010s.jpeg" alt="all-out-2010s">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">All Out 2010s</span>
+                                                        <span class="d-cd-p">The biggest songs of the 2010s.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/rock classic.jpeg" alt="rock classic image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Rock Classics</span>
+                                                        <span class="d-cd-p">Rock legend & epic songs that continue to inspire generations. Cover: Foo Fighters</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="images/chill hits.jpeg" alt="chill-hits image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Chill Hits</span>
+                                                        <span class="d-cd-p">Kick back to the best new and recent chill hits.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/vivalateno.jpeg" alt="viva valenteno image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Viva Latino</span>
+                                                        <span class="d-cd-p">Today's top Latin hits, elevando nuestra música. Cover: Don Omar</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="focus-main-container hidden">
+                                            <div class="focus-text-container">
+                                                <span class="focus-text">Sleep</span>
+                                            </div>
+                                            <div class="show-all-text">
+                                                <span class="show-all">Show all</span>
+                                            </div>
+                                        </div>
+                                        <div class="cards-content-whole-container hidden">
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/sleep.jpeg" alt="sleep image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">Sleep</span>
+                                                        <span class="d-cd-p">Gentle Ambient piano to help you fall asleep</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/daydreamer.jpeg" alt="daydreamer image">
+                                                   </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">DayDreamer</span>
+                                                        <span class="d-cd-p">Drift away with entralling instrumentals</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="focus-main-container">
+                                            <div class="focus-text-container">
+                                                <span class="focus-text">Sound of India</span>
+                                            </div>
+                                            <div class="show-all-text">
+                                                <span class="show-all">Show all</span>
+                                            </div>
+                                        </div>
+                                        <div class="cards-content-whole-container">
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/sound of mumbai.jpeg" alt="sound pf mumbai image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">The Sound of Mumbai IN</span>
+                                                        <span class="d-cd-p">The songs that define, unite and distinguish Mumbai IN, according to listening pattern and math.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/sound of kolkata.jpeg" alt="sound of kolkata image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">The Sound of Kolkata IN</span>
+                                                        <span class="d-cd-p">The songs that define, unite and distinguish Kolkata IN, according to listening pattern and  math.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/sound of delhi.jpeg" alt="sound-of-delhi">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">The Sound of Delhi IN</span>
+                                                        <span class="d-cd-p">The songs that define, unite and distinguish Delhi IN, according to listening pattern and math.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/sound-of-bangalure.jpeg" alt="sound of bangalure">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">The Sound of Bangaluru IN</span>
+                                                        <span class="d-cd-p">The songs that define, unite and distinguish Bangaluru IN, according to listening patterns and math.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/sound of chennai.jpeg" alt="sound of chennai image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">The Sound of Chennai IN</span>
+                                                        <span class="d-cd-p">The songs that define, unite and distinguish Chennai IN, according to listening pattern and math. </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cd-main-container">
+                                                <div class="cd-inner-container">
+                                                    <div class="cd-image-container">
+                                                        <img src="./images/sound of hydrabad.jpeg" alt="sound of hydrabad image">
+                                                    </div>
+                                                    <div class="cd-text-container">
+                                                        <span class="d-cd-head">The Sound of Hyderabad IN</span>
+                                                        <span class="d-cd-p">The songs that define, unite and distinguish Hyderabad IN, according to listening pattern and math.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-hr-container">
+                                            <hr class="d-hr">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dsp-ad-whole-container">
+                    <div class="dsp-ad-sub-container">
+                        <div class="dsp-text-container">
+                            <p class="dsp-ad-preview">PREVIEW OF SPOTIFY</p>
+                            <p class="dsp-ad-text">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+                        </div>
+                        <button class="dsp-ad-button">
+                            <span class="dsp-adb-text"> Sign up for free</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
